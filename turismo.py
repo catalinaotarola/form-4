@@ -49,7 +49,7 @@ def eliminar_turista():
             clave_a_eliminar = clave
             break
     if clave_a_eliminar is not None:
-        del turistas[clave_a_eliminar]
+        d turistas[clave_a_eliminar]
         print("Turista eliminado con exito.")
     else:
         print("El Turista no se ah encontrado, No se pudo eliminar.")
