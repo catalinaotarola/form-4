@@ -34,19 +34,22 @@ def turistas_por_mes(mes):
         mes_ingreso = int(partes_fecha[1])
         if mes_ingreso == mes:
             cuenta += 1
-    porcentaje = (cuenta / total * 100) if total > 0 else 0
+    porcentaje = (cuenta / total * 100)
+    if total > 0
+    else:
+        0
     return round(porcentaje, 1)
 
 def eliminar_turista():
-    nombre_input = input("Ingrese nombre de turista a eliminar: ").strip().lower()
+    nombre_i = input("Ingrese nombre de turista a eliminar: ").lower()
     clave_a_eliminar = None
     for clave, datos in turistas.items():
         nombre_turista = datos[0]
-        if nombre_turista.lower() == nombre_input:
+        if nombre_turista.lower() == nombre_i:
             clave_a_eliminar = clave
             break
     if clave_a_eliminar is not None:
         del turistas[clave_a_eliminar]
-        print("Turista eliminado con éxito.")
+        print("Turista eliminado con exito.")
     else:
-        print("Turista no encontrado. No se pudo eliminar.")
+        print("El Turista no se ah encontrado, No se pudo eliminar.")
