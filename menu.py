@@ -24,7 +24,7 @@ def main():
                             break
                         else:
                             print("Por favor, ingrese un mes válido entre 1 y 12.")
-                    except ValueError:
+                    except:
                         print("Entrada no válida. Por favor, ingrese un número entero.")
             elif opcion == 3:
                 eliminar_turista()
@@ -33,8 +33,5 @@ def main():
                 ejecutar = False
             else:
                 print("Opción no válida. Por favor, seleccione una opción del 1 al 4.")
-        except ValueError:
+        except:
             print("Entrada no válida. Por favor, ingrese un número entero.")
-
-if __name__ == "__main__":
-    main()
