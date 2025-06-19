@@ -23,15 +23,15 @@ def main():
                             turistas_por_mes(mes)
                             break
                         else:
-                            print("Por favor, ingrese un mes válido entre 1 y 12.")
+                            print(" ingrese un mes válido entre 1 y 12.")
                     except:
-                        print("Entrada no válida. Por favor, ingrese un número entero.")
+                        print(" Por favor, ingrese un número entero.")
             elif opcion == 3:
                 eliminar_turista()
             elif opcion == 4:
                 print("Programa terminado...")
                 ejecutar = False
             else:
-                print("Opción no válida. Por favor, seleccione una opción del 1 al 4.")
+                print("Opción no válida seleccione una opción del 1 al 4.")
         except:
-            print("Entrada no válida. Por favor, ingrese un número entero.")
+            print("Entrada no válida Por favor ingrese un número entero.")
